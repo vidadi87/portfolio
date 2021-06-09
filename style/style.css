@@ -104,7 +104,7 @@ p {
 	padding-bottom: 6rem;
 	position: relative;
 
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--gray);
 }
 
 .intro_subtitle {
@@ -270,7 +270,7 @@ p {
 }
 
 .reviews {
-	background: #332f30 center url("/portfolio/img/reviews.png");
+	background: #332f30 center url("/img/reviews.png");
 	padding: 3rem 0;
 	position: relative;
 }
@@ -350,10 +350,10 @@ p {
 
 .course {
 	width: 33.33%;
-	padding: 0 1rem;
+	/* padding: 0 1rem; */
 }
 
-.course_border {
+.course_photo {
 	border-radius: 10px;
 }
 
@@ -440,6 +440,10 @@ p {
 }
 
 @media(max-width: 1199px) {
+	.header_inner {
+		margin: 0 2rem;
+	}
+
 	.intro {
 		margin-top: -5rem;
 	}
@@ -450,20 +454,24 @@ p {
 		padding: 5rem 0;
 		align-items: center;
 		margin: 0 2rem;
-		/* border: 1px solid #2b2a2c; */
 	}
 
 	.intro_photo {
 		width: 100%;
 		position: relative;
-		border-radius: 1.5rem;
 	}
 
+	.portfolio {
+		margin: 2rem;
+	}
 
 	.work {
-		width: 98%;
-		margin:  1rem auto;
-		border-radius: 1.5rem;
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	.work_content {
+		padding: 2rem;
 	}
 
 	.work_photo {
@@ -478,17 +486,55 @@ p {
 		font-size: 1.5rem;
 	}
 
+	.about_inner {
+		margin: 2rem 2rem 7rem 2rem;
+	}
+
 	.about_photo {
 		width: 100%;
 		height: 100%;
 		margin-left: 1rem;
-		border-radius: 1.5rem;
 	}
 
 	.about_content {
 		display: flex;
 		flex-direction: column;
-		margin-top: 0rem;
+		margin-top: 2rem;
 		padding: 0 2rem;
+		margin-left: 2rem;
+	}
+
+	.about_bigtitle {
+		font-size: 2rem;
+	}
+
+	.about_text {
+		font-size: 1rem;
+	}
+
+	.course {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	.courses_inner {
+		margin: 2rem;
+	}
+
+	.course_photo {
+		width: 100%;
+	}
+
+	.course_name {
+		font-size: 2rem;
+	}
+
+	.course_cat {
+		font-size: 1rem;
+	}
+
+	.course_text {
+		font-size: 1rem;
+		margin-bottom: -1rem;
 	}
 }
