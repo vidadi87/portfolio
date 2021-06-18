@@ -10,6 +10,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	color: black;
+	background-color: #efefef;
 }
 
 h1, h2, h3, h4, h6, h6 {
@@ -57,6 +58,7 @@ p {
 .user_avatar {
 	border-radius: 50%;
 	display: flex;
+	box-shadow: 0 0 1px black;
 }
 
 .user_content {
@@ -94,8 +96,7 @@ p {
 }
 
 .nav_link:hover {
-	border-bottom: 2px solid var(--gray);
-	padding: 0 0 4px;
+	border-bottom: 1px solid var(--gray);
 }
 
 .intro_inner {
@@ -105,8 +106,6 @@ p {
 
 	border-bottom: 1px solid #bdbdbd;
 }
-
-/* Berik */
 
 .intro_content{
 	display: flex;
@@ -154,6 +153,12 @@ p {
 
 .social_link:hover {
 	transform: translateY(-5px);
+	
+}
+
+#social_icon {
+	box-shadow: 0 0 2px black;
+	border-radius: 10px;
 }
 
 .btn {
@@ -163,22 +168,22 @@ p {
 	width: 12.5rem;
 	height: max-content;
 
-	border: 1px solid black;
+	border: 1px solid #efefef;
 	border-radius: 1.8rem;
 	background: none;
 	cursor: pointer;
 
 	font-size: 1rem;
-	color: var(--black);
+	color: var(--gray);
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	opacity: 0.7;
+	box-shadow: 0 0 2px #767676;
+   background-color: #fcfcfc;
 }
 
 .btn:hover {
-	background: black;
-	color: white;
+	box-shadow: 0 0 4px #767676;
 }
 
 .intro_photo {
@@ -187,7 +192,12 @@ p {
 	margin: -4.8rem 0;
 	right: 0%;
 	z-index: 2;
-	border-radius: 10px;
+	border-radius: 7px;
+	box-shadow: 0 0 2px black;
+ }
+
+ .intro_photo:hover {
+	box-shadow: 0 0 4px black;
  }
 
  .text_center {
@@ -213,17 +223,19 @@ p {
 .work {
 	overflow: hidden;
 	box-shadow: 0 0 4px black;
-	border-radius: 10px;
+	border-radius: 7px;
 	margin-bottom: 1rem;
+	box-shadow: 0 0 2px black;
 }
 
 .work:hover {
-	box-shadow: 0 0 15px black;
+	box-shadow: 0 0 4px black;
 	cursor: pointer;
 }
 
 .work_content {
 	padding: 1.125rem 1rem;
+	background-color: #fcfcfc;
 }
 
 .work_cat {
@@ -251,13 +263,18 @@ p {
 .about_photo {
 	max-width: 50%;
 	margin-left: 4.5rem;
-	border-radius: 10px;
+	border-radius: 7px;
+	box-shadow: 0 0 2px black;
+}
+
+.about_photo:hover {
+	box-shadow: 0 0 4px black;
 }
 
 .about_content {
 	width: 50%;
-	margin-top: 7rem;
-	padding-left: 6.7rem;
+	margin-top: 7%;
+	padding-left: 8%;
 }
 
 .about_title {
@@ -313,6 +330,15 @@ p {
 	z-index: 1;
 }
 
+.reviews_author_icon {
+	box-shadow: 0 1px 1px #767676;
+	border-radius: 50%;
+}
+
+.reviews_author_icon:hover {
+	box-shadow: 0 2px 2px #767676;
+}
+
 .reviews_company {
 	margin-bottom: 0.3rem;
 
@@ -360,19 +386,28 @@ p {
 	margin-top: 3.5rem;
 	display: flex;
 	flex-wrap: wrap;
+	/* border: 1px solid red; */
+	justify-content: space-around;
 }
 
 .course {
 	width: 33.33%;
 	padding: 0 1rem;
-}
-
-.course_content {
-	padding-left: 0.5rem;
+	/* border: 1px solid green; */
+	display: flex;
+	flex-direction: column;
 }
 
 .course_photo {
-	border-radius: 10px;
+	border-radius: 7px;
+	height: 197px;
+	width: auto;
+	box-shadow: 0 0 2px black;
+}
+
+
+.course_photo:hover {
+	box-shadow: 0 0 4px black;
 }
 
 .course_name {
@@ -385,7 +420,7 @@ p {
 }
 
 .course_cat {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.3rem;
 
 	font-size: 0.81rem;
 	color: var(--gray);
@@ -395,16 +430,29 @@ p {
 	font-size: 0.81rem;
 	color: var(--gray);
 	font-weight: 300;
+	overflow: hidden;
+	position: relative;
+	height: 64px;
+	
+	margin-bottom: 1rem;
 }
 
-.btn_edit {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
-	width: 150px;
-	height: 34px;
+.course_text:after {
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 1.2em;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), #efefef 100%);
+	pointer-events: none;
+}
 
-	font-size: 0.9rem;
-	padding: 0.5rem 0.75rem;
+.course_border {
+	border: 1px solid #c2c2c2;
+	padding: 2px;
+	border-radius: 7px;
 }
 
 .footer {
@@ -460,7 +508,7 @@ p {
 
 @media(max-width: 1199px) {
 	.header_inner {
-		margin: 0 2rem;
+		margin: 0 2rem 0 1rem;
 	}
 
 	.intro {
@@ -473,7 +521,7 @@ p {
 		justify-content: space-between;
 		padding: 5rem 0 2.5rem 0;
 		align-items: center;
-		margin: 0 2rem;
+		margin: 0 1rem;
 	}
 
 	.intro_subtitle {
@@ -493,13 +541,13 @@ p {
 	}
 
 	.left-block {
-		margin-top: 3rem;
+		margin-top: 5%;
 	}
 
 	.intro_photo {
 		position: relative;
 		width: 30rem;
-		margin: -0.5rem 0 -0.5rem 8.2rem;
+		margin: -0.5rem 0 -0.5rem 8.5rem;
 	}
 
 	.portfolio {
@@ -516,7 +564,7 @@ p {
 	}
 
 	.works {
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
   }
 
 	.work {
@@ -541,7 +589,7 @@ p {
 	}
 
 	.about_inner {
-		margin: 0 2rem 4rem 2rem;
+		margin: 1rem 1rem 3rem 1rem;
 	}
 
 	.about_photo {
@@ -553,10 +601,10 @@ p {
 	.about_content {
 		display: flex;
 		flex-direction: column;
-		margin-top: 1.8rem;
+		margin-top: 2.5%;
 		padding: 0 2rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
+		margin-left: 5%;
+		/* margin-right: 1rem; */
 	}
 
 	.about_title {
@@ -571,17 +619,6 @@ p {
 		font-size: 1rem;
 		margin-top: 2rem;
 		margin-bottom: 1.5rem;
-	}
-
-	.course {
-		width: 100%;
-		margin-bottom: 3rem;
-	}
-
-	.courses_inner {
-		margin: 2rem;
-		display: flex;
-		flex-wrap: nowrap;
 	}
 
 	.course_photo {
@@ -601,9 +638,13 @@ p {
 	.course_text {
 		font-size: 1rem;
 		margin-bottom: -1rem;
+		overflow: hidden;
+		position: relative;
+		height: 58px;
 	}
 
 	.btn_edit {
 		height: 50px;
 	}
+
 }
