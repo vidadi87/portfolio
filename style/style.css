@@ -61,6 +61,10 @@ p {
 	box-shadow: 0 0 1px black;
 }
 
+.user_avatar:hover {
+	box-shadow: 0 0 4px black;
+}
+
 .user_content {
 	padding-left: 9px;
 }
@@ -101,7 +105,7 @@ p {
 
 .intro_inner {
 	padding-top: 4rem;
-	padding-bottom: 5rem;
+	padding-bottom: 6rem;
 	position: relative;
 
 	border-bottom: 1px solid #bdbdbd;
@@ -164,22 +168,31 @@ p {
 .btn {
 	display: inline-block;
 	vertical-align: top;
-	padding: 1rem 2rem;
-	width: 12.5rem;
-	height: max-content;
+	/* padding: 1rem 2rem; */
+	/* width: 12.5rem; */
+	/* height: max-content; */
 
 	border: 1px solid #efefef;
 	border-radius: 1.8rem;
 	background: none;
 	cursor: pointer;
 
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	color: var(--gray);
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
 	box-shadow: 0 0 2px #767676;
    background-color: #fcfcfc;
+
+
+	width: 130px;
+	height: 34px;
+
+	font-size: 0.9rem;
+	
+	padding: 0.5rem 0.75rem;
+	
 }
 
 .btn:hover {
@@ -273,7 +286,7 @@ p {
 
 .about_content {
 	width: 50%;
-	margin-top: 7%;
+	margin-top: 6.7% ;
 	padding-left: 8%;
 }
 
@@ -287,13 +300,13 @@ p {
 .about_bigtitle {
 	font-size: 2rem;
 	font-weight: bold;
-	color: var(--gray-light);
+	color: #767676;
 	text-transform: uppercase;
 }
 
 .about_text {
 	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 3.150rem;
 
 	font-size: 0.81rem;
 	font-weight: 300;
@@ -331,12 +344,12 @@ p {
 }
 
 .reviews_author_icon {
-	box-shadow: 0 1px 1px #767676;
+	box-shadow: 0 2px 2px #767676;
 	border-radius: 50%;
 }
 
 .reviews_author_icon:hover {
-	box-shadow: 0 2px 2px #767676;
+	box-shadow: 0 4px 4px #767676;
 }
 
 .reviews_company {
@@ -450,10 +463,19 @@ p {
 }
 
 .course_border {
-	border: 1px solid #c2c2c2;
+	/* border: 1px solid #c2c2c2; */
 	padding: 2px;
 	border-radius: 7px;
 }
+
+/* .btn_edit {
+	width: 130px;
+	height: 34px;
+
+	font-size: 0.9rem;
+	
+	padding: 0.5rem 0.75rem;
+} */
 
 .footer {
 	padding: 1rem 0;
@@ -641,6 +663,19 @@ p {
 		overflow: hidden;
 		position: relative;
 		height: 58px;
+		margin-bottom: 1rem;
+	}
+
+	.course_text:after {
+		content: "";
+		text-align: right;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70%;
+		height: 1.2em;
+		background: linear-gradient(to right, rgba(255, 255, 255, 0), #efefef 100%);
+		pointer-events: none;
 	}
 
 	.btn_edit {
