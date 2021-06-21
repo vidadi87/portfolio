@@ -58,11 +58,11 @@ p {
 .user_avatar {
 	border-radius: 50%;
 	display: flex;
-	box-shadow: 0 0 1px black;
+	box-shadow: 0 0 4px black;
 }
 
 .user_avatar:hover {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 8px black;
 }
 
 .user_content {
@@ -161,7 +161,7 @@ p {
 }
 
 #social_icon {
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 4px black;
 	border-radius: 10px;
 }
 
@@ -182,7 +182,7 @@ p {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	box-shadow: 0 0 2px #767676;
+	box-shadow: 0 0 4px #767676;
    background-color: #fcfcfc;
 
 
@@ -196,7 +196,7 @@ p {
 }
 
 .btn:hover {
-	box-shadow: 0 0 4px #767676;
+	box-shadow: 0 0 8px #767676;
 }
 
 .intro_photo {
@@ -206,11 +206,11 @@ p {
 	right: 0%;
 	z-index: 2;
 	border-radius: 7px;
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 4px black;
  }
 
  .intro_photo:hover {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 8px black;
  }
 
  .text_center {
@@ -235,14 +235,13 @@ p {
 
 .work {
 	overflow: hidden;
-	box-shadow: 0 0 4px black;
 	border-radius: 7px;
 	margin-bottom: 1rem;
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 4px black;
 }
 
 .work:hover {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 8px black;
 	cursor: pointer;
 }
 
@@ -277,11 +276,11 @@ p {
 	max-width: 50%;
 	margin-left: 4.5rem;
 	border-radius: 7px;
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 4px black;
 }
 
 .about_photo:hover {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 8px black;
 }
 
 .about_content {
@@ -344,12 +343,12 @@ p {
 }
 
 .reviews_author_icon {
-	box-shadow: 0 2px 2px #767676;
+	box-shadow: 0 4px 4px #767676;
 	border-radius: 50%;
 }
 
 .reviews_author_icon:hover {
-	box-shadow: 0 4px 4px #767676;
+	box-shadow: 0 8px 8px #767676;
 }
 
 .reviews_company {
@@ -413,14 +412,14 @@ p {
 
 .course_photo {
 	border-radius: 7px;
-	height: 197px;
-	width: auto;
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 4px black;
+	width: 95%;
+	height: auto;
 }
 
 
 .course_photo:hover {
-	box-shadow: 0 0 4px black;
+	box-shadow: 0 0 8px black;
 }
 
 .course_name {
@@ -467,15 +466,6 @@ p {
 	padding: 2px;
 	border-radius: 7px;
 }
-
-/* .btn_edit {
-	width: 130px;
-	height: 34px;
-
-	font-size: 0.9rem;
-	
-	padding: 0.5rem 0.75rem;
-} */
 
 .footer {
 	padding: 1rem 0;
@@ -528,6 +518,36 @@ p {
 	text-decoration: none;
 }
 
+/* Скролл */
+
+::-webkit-scrollbar-button {
+	width: 5px;
+	height: 0px
+}
+	
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+}
+	
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #858585;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #6a696b;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+* {
+	scrollbar-width: thin;
+ }
+
+
+
 @media(max-width: 1199px) {
 	.header_inner {
 		margin: 0 2rem 0 1rem;
@@ -558,7 +578,6 @@ p {
 	}
 
 	.btn {
-		padding: 1rem 1rem;
     	width: 10rem;
 	}
 
@@ -623,10 +642,9 @@ p {
 	.about_content {
 		display: flex;
 		flex-direction: column;
-		margin-top: 2.5%;
+		margin-top: 3%;
 		padding: 0 2rem;
 		margin-left: 5%;
-		/* margin-right: 1rem; */
 	}
 
 	.about_title {
@@ -641,10 +659,6 @@ p {
 		font-size: 1rem;
 		margin-top: 2rem;
 		margin-bottom: 1.5rem;
-	}
-
-	.course_photo {
-		width: 100%;
 	}
 
 	.course_name {
@@ -676,10 +690,6 @@ p {
 		height: 1.2em;
 		background: linear-gradient(to right, rgba(255, 255, 255, 0), #efefef 100%);
 		pointer-events: none;
-	}
-
-	.btn_edit {
-		height: 50px;
 	}
 
 }
