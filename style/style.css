@@ -337,7 +337,7 @@ p {
 }
 
 .reviews_company {
-	margin-bottom: 0.3rem;
+	margin: 1rem 0 0.3rem 0;
 
 	font-size: 1rem;
 	color: var(--black);
@@ -581,7 +581,7 @@ p {
 	.text_center {
 		margin-top: 1.3rem;
     	margin-bottom: 1.3rem;
-		 font-size: 2.5rem;
+		font-size: 2.5rem;
 	}
 
 	.works {
@@ -601,11 +601,7 @@ p {
 		width: 100%;
 	}
 
-	.work_cat {
-		font-size: 1rem;
-	}
-
-	.work_title {
+	.work_cat, .work_title {
 		font-size: 1rem;
 	}
 
@@ -697,6 +693,7 @@ p {
 	}
 
 	.burger {
+		margin: 0.3rem 1rem;
 		width: 30px;
 		height: 4px;
 	}
@@ -709,10 +706,97 @@ p {
 
 	.left-block {
 		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 
 	.intro_inner {
-		padding: 6rem 0 1.5rem 0;
+		padding: 6rem 0 0 0;
+		margin: 0;
 	}
 
+	.intro_title {
+		font-size: 2rem;
+	}
+
+	.social {
+		margin-top: 1.8rem;
+		margin-bottom: 1.8rem;
+	}
+	
+	#social_icon {
+		width: 90%;
+	}
+
+	.btn {
+		width: 6rem;
+		height: 1.8rem;
+		padding: 0;
+		font-size: 0.8rem;
+	}
+
+	.portfolio {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #bdbdbd;
+		margin: 0;
+	}
+
+	.text_center {
+		font-size: 2rem;
+	}
+
+	.work {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+
+	.work_cat, .work_title {
+		font-size: 0.8rem;
+	}
+	
+	.about_inner {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.about_photo {
+		min-width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.about_content {
+		margin: 1.5rem 0.7rem 1.8rem 0.7rem;
+		width: 100%;
+		padding: 0;
+	}
+
+	.about_title {
+		font-size: 2rem;
+	}
+
+	.about_bigtitle {
+		font-size: 1.5rem;
+	}
+
+	.about_text {
+		margin: 1rem 0;
+		font-size: 0.8rem;
+	}
+	
+	.reviews {
+		padding: 2rem 2rem 4rem 2rem;
+	}
+
+	.reviews_text {
+		font-size: 0.8rem;
+	}
+	
+	.reviews_author_icon {
+		width: 5.5rem;
+		height: 100%;
+	}
 }
