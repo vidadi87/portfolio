@@ -652,7 +652,7 @@ p {
 		margin-bottom: -1rem;
 		overflow: hidden;
 		position: relative;
-		height: 58px;
+		height: 56px;
 		margin-bottom: 1rem;
 	}
 
@@ -769,7 +769,7 @@ p {
 	}
 
 	.about_content {
-		margin: 1.5rem 0.7rem 1.8rem 0.7rem;
+		margin: 1.8rem 0.7rem 1.8rem 0.7rem;
 		width: 100%;
 		padding: 0;
 	}
@@ -798,5 +798,49 @@ p {
 	.reviews_author_icon {
 		width: 5.5rem;
 		height: 100%;
+	}
+
+	.courses_inner {
+		margin-top: 2rem;
+	}
+
+	.courses {
+		margin-bottom: 2rem;
+	}
+
+	.course {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 0 2rem 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.course_photo {
+		width: 100%;
+	}
+
+	.course_name {
+		font-size: 1rem;
+	}
+
+	.course_cat {
+		font-size: 0.8rem;
+	}
+
+	.course_text {
+		height: 47px;
+		margin-bottom: 0.8rem;
+		font-size: 0.8rem;
+	}
+
+	.text_center {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.footer_nav {
+		display: none;
 	}
 }
