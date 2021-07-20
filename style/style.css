@@ -533,10 +533,6 @@ p {
 
  /* Tablet version */
 @media(max-width: 1199px) {
-	
-	.user, .nav{
-		display: none;
-	}
 
 	.burger {
 		display: block;
@@ -570,7 +566,7 @@ p {
 	}
 
 	.intro_title {
-		font-size: 2.3rem;
+		font-size: 2.5rem;
 	}
 	.intro_text {
 		font-size: 1rem;
@@ -694,6 +690,28 @@ p {
 
 /* Mobile version */
 @media (max-width: 767px) {
+
+	.user {
+		display: none;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-around;
+
+		width: 100%;
+		border-bottom: 1px solid black;
+		padding-bottom: 1rem;
+	}
+
+	.nav_link {
+		margin: 0;
+	}
+
+	.header_inner {
+		margin: 0;
+		font-size: 1rem;
+	}
 
 	.intro_content{
 		width: 100%;
