@@ -105,7 +105,7 @@ p {
 
 .intro_inner {
 	padding-top: 4rem;
-	padding-bottom: 6rem;
+	padding-bottom: 5.1rem;
 	position: relative;
 
 	border-bottom: 1px solid #bdbdbd;
@@ -186,8 +186,8 @@ p {
 
 .intro_photo {
 	position: absolute;
-	width: 34rem;
-	margin: -4.8rem 0;
+	width: 30rem;
+	margin: -2.8rem 0;
 	right: 0%;
 	z-index: 2;
 	border-radius: 7px;
@@ -231,12 +231,12 @@ p {
 }
 
 .work_content {
-	padding: 1.125rem 1rem;
+	padding: 0.8rem 1rem;
 	background-color: #fcfcfc;
 }
 
 .work_cat {
-	font-size: 0.81rem;
+	font-size: 0.95rem;
 	color: var(--black);
 	text-transform: uppercase;
 	margin-bottom: 0.4rem;
@@ -298,7 +298,7 @@ p {
 }
 
 .reviews {
-	background: #332f30 center url("../img/reviews.png");
+	background: #332f30 url("../img/reviews.png") center;
 	padding: 3rem 0;
 	position: relative;
 }
@@ -398,7 +398,7 @@ p {
 .course_photo {
 	border-radius: 7px;
 	box-shadow: 0 0 4px black;
-	width: 95%;
+	width: 102%;
 	height: auto;
 }
 
@@ -411,7 +411,7 @@ p {
 	margin-top: 1.3rem;
 	margin-bottom: 0.6rem;
 
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: var(--black);
 	font-weight: bold;
 }
@@ -419,7 +419,7 @@ p {
 .course_cat {
 	margin-bottom: 1.3rem;
 
-	font-size: 0.85rem;
+	font-size: 0.95rem;
 	color: var(--gray);
 }
 
@@ -556,7 +556,7 @@ p {
 		display: flex;
 		flex-wrap: wrap-reverse;
 		justify-content: space-between;
-		padding: 6rem 0 6rem 0;
+		padding: 6rem 0 5.1rem 0;
 		align-items: center;
 		margin: 0 1rem;
 	}
@@ -578,8 +578,8 @@ p {
 
 	.intro_photo {
 		position: absolute;
-		width: 30rem;
-		margin: -1.5rem 0 -0.5rem 8.5rem;
+		width: 28rem;
+		margin: -0.5rem 0 -0.5rem 8.5rem;
 	}
 
 	.portfolio {
@@ -600,20 +600,24 @@ p {
   }
 
 	.work {
-		width: 100%;
-		margin: 0 1rem 1rem 0;
-	}
-
-	.work_content {
-		padding: 1rem;
+		width: 95%;
+		margin: 0 1rem 1rem 1rem;
 	}
 
 	.work_photo {
 		width: 100%;
 	}
 
-	.work_cat, .work_title {
-		font-size: 0.9rem;
+	.work_content {
+		padding: 0.6rem 0.8rem;
+	}
+
+	.work_cat {
+		font-size: 0.8rem;
+	}
+
+	.work_title {
+		font-size: 0.96rem;
 	}
 
 	.about_inner {
@@ -649,12 +653,12 @@ p {
 	}
 
 	.course_name {
-		font-size: 0.9rem;
+		font-size: 0.96rem;
 		margin-top: 1rem;
 	}
 
 	.course_cat {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		margin-bottom: 1rem;
 	}
 
